@@ -1,6 +1,6 @@
 # Sum Of Square Sequences
 
-## Group Submission
+## COP5615 - Distributed Operating Systems Principles - Group Project 1
 
 **Name**: Abhay Shreekant Shastry  
 **UFID**: 19482010  
