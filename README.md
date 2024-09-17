@@ -59,3 +59,24 @@ Using `a = 4`, the largest value computed was for `n = 4,000,000,000,000` and `k
 - **User CPU Time**: 12,853.38 seconds (~3.5 hours)
 - **System CPU Time**: 63.26 seconds  
 - **Total Time**: 54 minutes, 49.43 seconds  
+
+### 5. How to run this program
+
+To run the program, follow the steps below:
+
+**Compile the Program**
+
+Ensure you have the Pony programming language installed. Compile the main.pony file using the following command:
+
+```
+pony .
+```
+This command will generate an executable file in the current directory
+
+**Execute the Program**
+
+Once compiled, you can run the executable with two command-line arguments: the input size and sequence size. The format is as follows:
+
+```
+./SumOfSquares <input_size> <sequence_size>
+```
