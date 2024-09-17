@@ -1,53 +1,61 @@
-# DOSP_SumOfSquaresSeq
-<h1>GROUP SUBMISSION:</h1>
+# Sum Of Square Sequences
 
-Name: Abhay Shreekant Shastry
-UFID: 19482010
+## Group Submission
 
-Name: Prajay Prashanth Panangadan
-UFID: 32637035
+**Name**: Abhay Shreekant Shastry  
+**UFID**: 19482010  
 
+**Name**: Prajay Prashanth Panangadan  
+**UFID**: 32637035  
 
-1) Maximum Size of work unit:
+---
 
-If the total size of the input is "n", we determined the size of work unit for "a" actors to be n/a(n divided by a). Each worker gets a range such that it can work independently wihtout communicating with other actors. There is a simple flow from the boss to the worker and back which results in optimum performance
+### 1. Maximum Size of Work Unit
 
-For determining the value of "a" we ran a few tests with different values of a to detemine the value we'd use. Upon analysis, we arrived at a = 4. Below are a few performance values for different a values for 2 sets of inputs:
+For a total input size of `n`, the size of each work unit for `a` actors was determined to be `n/a` (n divided by a). Each worker is assigned a range that allows independent processing, without the need for inter-worker communication. The communication flow is simple: from the master to the worker and back, achieving optimal performance.
 
+To determine the optimal value of `a`, we ran tests with various values. After analysis, we found that `a = 4` provides good performance. Below are the performance results for different values of `a` on two input sets:
 
-For 1000000 2
- a = 12; User CPU Time = 0.08 ; System Cpu Time: 0.00; Total Time : 0.217
- a = 4;  User CPU Time = 0.07 ; System Cpu Time: 0.00; Total Time : 0.222
- a = 2;  User CPU Time = 0.04 ; System Cpu Time: 0.00; Total Time : 0.204
- a = 20; User CPU Time = 0.07 ; System Cpu Time: 0.00; Total Time : 0.192
+**For input size 1,000,000 with k = 2:**
 
+| `a` | User CPU Time | System CPU Time | Total Time |
+|-----|---------------|-----------------|------------|
+| 12  | 0.08          | 0.00            | 0.217      |
+| 4   | 0.07          | 0.00            | 0.222      |
+| 2   | 0.04          | 0.00            | 0.204      |
+| 20  | 0.07          | 0.00            | 0.192      |
 
-For 1000000 4
- a = 12; User CPU Time = 0.07 ; System CPU Time: 0.00; Total Time : 0.217
- a = 4;  User CPU Time = 0.05 ; System CPU Time: 0.00; Total Time : 0.194
- a = 2;  User CPU Time = 0.06 ; System CPU Time: 0.00; Total Time : 0.193
- a = 20; User CPU Time = 0.03 ; System CPU Time: 0.00; Total Time : 0.010
+**For input size 1,000,000 with k = 4:**
 
+| `a` | User CPU Time | System CPU Time | Total Time |
+|-----|---------------|-----------------|------------|
+| 12  | 0.07          | 0.00            | 0.217      |
+| 4   | 0.05          | 0.00            | 0.194      |
+| 2   | 0.06          | 0.00            | 0.193      |
+| 20  | 0.03          | 0.00            | 0.010      |
 
-2) Result of running program for lukas 1000000 4:
+---
 
-Result: No output result
-There is no sequence of length 4 where the sum of xi^2 equals a perfect square for the range 1000000
+### 2. Result of Running the Program for `lukas 1000000 4`
 
-3) The running time for the above as reported by time for the above:
+**Result**: No sequence of length 4 exists such that the sum of squares of consecutive numbers equals a perfect square in the range of 1,000,000.
 
-User CPU Time : 0.10 seconds
-System CPU Time : 0.00 seconds
-Total time: 0.016 seconds
+---
 
-(User CPU Time + System CPU Time) / Total Time : 6.25
+### 3. Running Time for the Above
 
+- **User CPU Time**: 0.10 seconds  
+- **System CPU Time**: 0.00 seconds  
+- **Total Time**: 0.016 seconds  
+- **Efficiency**: (User CPU Time + System CPU Time) / Total Time = 6.25  
 
-4) The Largest Value we managed to solve: 
+---
 
-By Keeping a = 4,
-The largest value we could compute was for n: 4000000000000 and k: 24
-Time Metrics for the above input:
-User CPU Time: 12853.38 seconds (Approximately 3.5 Hours)
-System CPU Time: 63.26 seconds
-Total Time: 54 minutes 49.43 seconds
+### 4. Largest Value Computed
+
+Using `a = 4`, the largest value computed was for `n = 4,000,000,000,000` and `k = 24`.
+
+**Time Metrics for the above input**:
+- **User CPU Time**: 12,853.38 seconds (~3.5 hours)
+- **System CPU Time**: 63.26 seconds  
+- **Total Time**: 54 minutes, 49.43 seconds  
